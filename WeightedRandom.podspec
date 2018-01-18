@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
                     Each element has a known probability of selection.
                    DESC
 
-  s.homepage     = "http://github.com/victorhydecode"
+  s.homepage     = "http://github.com/victorhydecode/WeightedRandom"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -69,8 +69,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
+  # s.ios.deployment_target = "10.0"
+  s.osx.deployment_target = "10.9"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/victorhydecode/WeightedRandom.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/victorhydecode/WeightedRandom.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,7 +97,9 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
+  s.pod_target_xcconfig = {
+    'SWIFT_VERSION' => '4.0'
+  }
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
