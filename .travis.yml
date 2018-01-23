@@ -6,9 +6,9 @@ branches:
     - master
 
 script:
-    - xcodebuild \
-        -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0' \
-        -project WeightedRandom.xcodeproj \
-        -scheme WeightedRandom \
-        CODE_SIGNING_REQUIRED=NO \
-        clean test
+  - xcodebuild
+      -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0'
+      -project WeightedRandom.xcodeproj
+      -scheme WeightedRandom
+      CODE_SIGNING_REQUIRED=NO
+      clean test
